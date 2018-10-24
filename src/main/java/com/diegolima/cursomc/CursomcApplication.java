@@ -1,5 +1,6 @@
 package com.diegolima.cursomc;
 
+<<<<<<< HEAD
 import java.text.SimpleDateFormat;
 import java.util.Arrays;
 
@@ -116,4 +117,15 @@ public class CursomcApplication implements CommandLineRunner{
 	}
 	
 	
+=======
+import org.springframework.boot.SpringApplication;
+import org.springframework.boot.autoconfigure.SpringBootApplication;
+
+@SpringBootApplication
+public class CursomcApplication {
+
+	public static void main(String[] args) {
+		SpringApplication.run(CursomcApplication.class, args);
+	}
+>>>>>>> branch 'master' of https://github.com/diegolimal90/spring.git
 }

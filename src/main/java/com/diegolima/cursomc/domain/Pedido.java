@@ -55,6 +55,14 @@ public class Pedido implements Serializable{
 		this.enderecoDeEntrega = enderecoDeEntrega;
 	}
 	
+	public double getValorTotal() {
+		double soma = 0;
+		for (ItemPedido ip : itens) {
+			soma = soma + ip.getSubtotal();
+		}
+		return soma;
+	}
+	
 	@JsonIgnore
 	public List<Pedido> getPedidos(){
 		List<Pedido> lista = new ArrayList<>();
@@ -111,7 +119,7 @@ public class Pedido implements Serializable{
 	public void setItens(Set<ItemPedido> itens) {
 		this.itens = itens;
 	}
-
+	
 	@Override
 	public int hashCode() {
 		final int prime = 31;

@@ -10,7 +10,6 @@ import org.springframework.data.domain.Sort.Direction;
 import org.springframework.stereotype.Service;
 
 import com.diegolima.cursomc.domain.Categoria;
-import com.diegolima.cursomc.domain.Cliente;
 import com.diegolima.cursomc.dto.CategoriaDTO;
 import com.diegolima.cursomc.repositories.CategoriaRepository;
 import com.diegolima.cursomc.services.exceptions.DataIntegrityException;
